@@ -1,1 +1,1 @@
-web: gunicorn dashboard_backend.wsgi
+web: gunicorn tesla.wsgi
