@@ -3,6 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{% endblock %}</title>
+
+    {% load static %}
+
+    <script src="{% static 'material/js/jquery.js' %}"></script>
+    {% include 'material/includes/material_js.html' %}
+    
+    {% include 'material/includes/material_css.html' %}
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     {% block body %}{% endblock %}

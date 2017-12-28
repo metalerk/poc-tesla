@@ -1,6 +1,7 @@
-from django.urls import re_path
+from django.conf.urls import url, include
 from .views import Home
 
 urlpatterns = [
-    re_path(r'^$', Home.as_view()),
+    url(r'^$', Home.as_view()),
+    url(r'sp', include('sp.urls'))
 ]
