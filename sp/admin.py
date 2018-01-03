@@ -5,11 +5,11 @@ from .models import (
 	)
 
 class SerieAdmin(admin.ModelAdmin):
-	list_display = ('name', 'mfal', 'preference', 'ponderacion',)
+	list_display = ('name', 'mfal', 'take_rate', 'ponderacion',)
 
 
 class PackageAdmin(admin.ModelAdmin):
-	list_display = ('name', 'mfal', 'preference',)
+	list_display = ('name', 'mfal', 'take_rate',)
 
 
 admin.site.register(Serie, SerieAdmin)
