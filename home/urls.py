@@ -1,7 +1,6 @@
 from django.conf.urls import url, include
-from .views import Home
+from .views import SP
 
 urlpatterns = [
-    url(r'^$', Home.as_view()),
-    url(r'sp', include('sp.urls'))
+    url(r'^$', SP.as_view()),
 ]
