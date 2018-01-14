@@ -1,8 +1,10 @@
-from django.http import HttpResponse
-from django.views import View
-from django.shortcuts import render
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
-class Home(View):
+
+class SP(APIView):
 
 	def get(self, request, *args, **kwargs):
-		return render(request, 'home.html')
+		return Response({
+			'ping': 'pong',
+		})
